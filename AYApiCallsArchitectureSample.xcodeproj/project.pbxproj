@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		865D87AB1E4F82500057986C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87AA1E4F82500057986C /* AppDelegate.swift */; };
-		865D87AD1E4F82500057986C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87AC1E4F82500057986C /* ViewController.swift */; };
+		865D87AD1E4F82500057986C /* AYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87AC1E4F82500057986C /* AYHomeViewController.swift */; };
 		865D87B01E4F82500057986C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D87AE1E4F82500057986C /* Main.storyboard */; };
 		865D87B21E4F82500057986C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865D87B11E4F82500057986C /* Assets.xcassets */; };
 		865D87B51E4F82500057986C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D87B31E4F82500057986C /* LaunchScreen.storyboard */; };
+		865D87C51E4F840A0057986C /* RySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865D87C41E4F840A0057986C /* RySDK.framework */; };
+		865D87C81E4F84880057986C /* AYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87C71E4F84880057986C /* AYBaseViewController.swift */; };
+		865D87CA1E4F88390057986C /* AYBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87C91E4F88390057986C /* AYBaseParser.swift */; };
+		865D87CC1E4F888B0057986C /* AYParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87CB1E4F888B0057986C /* AYParserFactory.swift */; };
+		865D87CE1E4F8A1E0057986C /* AYServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87CD1E4F8A1E0057986C /* AYServiceProtocol.swift */; };
+		865D87D01E4F8C030057986C /* AYBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87CF1E4F8C030057986C /* AYBaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		865D87A71E4F82500057986C /* AYApiCallsArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYApiCallsArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865D87AA1E4F82500057986C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		865D87AC1E4F82500057986C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		865D87AC1E4F82500057986C /* AYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AYHomeViewController.swift; path = ../../../AYHomeViewController.swift; sourceTree = "<group>"; };
 		865D87AF1E4F82500057986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		865D87B11E4F82500057986C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865D87B41E4F82500057986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865D87B61E4F82500057986C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865D87C41E4F840A0057986C /* RySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RySDK.framework; sourceTree = "<group>"; };
+		865D87C71E4F84880057986C /* AYBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBaseViewController.swift; sourceTree = "<group>"; };
+		865D87C91E4F88390057986C /* AYBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBaseParser.swift; sourceTree = "<group>"; };
+		865D87CB1E4F888B0057986C /* AYParserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYParserFactory.swift; sourceTree = "<group>"; };
+		865D87CD1E4F8A1E0057986C /* AYServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYServiceProtocol.swift; sourceTree = "<group>"; };
+		865D87CF1E4F8C030057986C /* AYBaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865D87C51E4F840A0057986C /* RySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +67,92 @@
 		865D87A91E4F82500057986C /* AYApiCallsArchitectureSample */ = {
 			isa = PBXGroup;
 			children = (
+				865D87C31E4F83F10057986C /* Frameworks */,
+				865D87BC1E4F83910057986C /* DataStructures */,
+				865D87BD1E4F83910057986C /* Network */,
+				865D87C01E4F83910057986C /* UI */,
 				865D87AA1E4F82500057986C /* AppDelegate.swift */,
-				865D87AC1E4F82500057986C /* ViewController.swift */,
 				865D87AE1E4F82500057986C /* Main.storyboard */,
 				865D87B11E4F82500057986C /* Assets.xcassets */,
 				865D87B31E4F82500057986C /* LaunchScreen.storyboard */,
 				865D87B61E4F82500057986C /* Info.plist */,
 			);
 			path = AYApiCallsArchitectureSample;
+			sourceTree = "<group>";
+		};
+		865D87BC1E4F83910057986C /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		865D87BD1E4F83910057986C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				865D87BE1E4F83910057986C /* Parsers */,
+				865D87BF1E4F83910057986C /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		865D87BE1E4F83910057986C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				865D87C91E4F88390057986C /* AYBaseParser.swift */,
+				865D87CB1E4F888B0057986C /* AYParserFactory.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		865D87BF1E4F83910057986C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				865D87CD1E4F8A1E0057986C /* AYServiceProtocol.swift */,
+				865D87CF1E4F8C030057986C /* AYBaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		865D87C01E4F83910057986C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				865D87C11E4F83910057986C /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		865D87C11E4F83910057986C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				865D87C61E4F846C0057986C /* BaseController */,
+				865D87C21E4F83910057986C /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		865D87C21E4F83910057986C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				865D87AC1E4F82500057986C /* AYHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		865D87C31E4F83F10057986C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865D87C41E4F840A0057986C /* RySDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		865D87C61E4F846C0057986C /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				865D87C71E4F84880057986C /* AYBaseViewController.swift */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865D87AD1E4F82500057986C /* ViewController.swift in Sources */,
+				865D87CC1E4F888B0057986C /* AYParserFactory.swift in Sources */,
+				865D87CE1E4F8A1E0057986C /* AYServiceProtocol.swift in Sources */,
+				865D87D01E4F8C030057986C /* AYBaseService.swift in Sources */,
+				865D87AD1E4F82500057986C /* AYHomeViewController.swift in Sources */,
 				865D87AB1E4F82500057986C /* AppDelegate.swift in Sources */,
+				865D87C81E4F84880057986C /* AYBaseViewController.swift in Sources */,
+				865D87CA1E4F88390057986C /* AYBaseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +354,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AYApiCallsArchitectureSample/Frameworks",
+				);
 				INFOPLIST_FILE = AYApiCallsArchitectureSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AY.AYApiCallsArchitectureSample;
@@ -270,6 +370,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AYApiCallsArchitectureSample/Frameworks",
+				);
 				INFOPLIST_FILE = AYApiCallsArchitectureSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AY.AYApiCallsArchitectureSample;
