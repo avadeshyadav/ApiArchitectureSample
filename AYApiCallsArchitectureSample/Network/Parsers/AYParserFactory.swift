@@ -16,13 +16,11 @@ class AYParserFactory: NSObject {
         
         switch apiType {
             
-        case .homeAvailability:
-            parser = AYBaseParser()
+        case .currentWeather:
+            parser = AYCurrentWeatherParser()
             
-        case .googlePlaces:
-            parser = AYBaseParser()
-            
-
+        case .forecastWeather:
+            parser = AYForeCastWeatherParser()
             
         case .none:
             break

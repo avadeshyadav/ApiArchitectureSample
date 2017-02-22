@@ -18,9 +18,18 @@
 		865D87CC1E4F888B0057986C /* AYParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87CB1E4F888B0057986C /* AYParserFactory.swift */; };
 		865D87CE1E4F8A1E0057986C /* AYServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87CD1E4F8A1E0057986C /* AYServiceProtocol.swift */; };
 		865D87D01E4F8C030057986C /* AYBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87CF1E4F8C030057986C /* AYBaseService.swift */; };
+		865D87D21E50252C0057986C /* AYWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87D11E50252C0057986C /* AYWeatherService.swift */; };
+		865D87D81E5034330057986C /* AYLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87D71E5034330057986C /* AYLoaderView.swift */; };
+		865D87DA1E50344E0057986C /* AYLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865D87D91E50344E0057986C /* AYLoaderView.xib */; };
+		865D87DC1E50386D0057986C /* AYUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87DB1E50386D0057986C /* AYUrlBuilder.swift */; };
+		866DC69E1E5372FC00C493BD /* AYCurrentWeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC69D1E5372FC00C493BD /* AYCurrentWeatherParser.swift */; };
+		866DC6A01E5373A000C493BD /* AYForeCastWeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC69F1E5373A000C493BD /* AYForeCastWeatherParser.swift */; };
+		866DC6A21E537CDE00C493BD /* AYLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC6A11E537CDE00C493BD /* AYLocation.swift */; };
+		866DC6A41E537E6C00C493BD /* AYCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC6A31E537E6C00C493BD /* AYCurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8644C13F1E536EC9002DD319 /* AYApiCallsArchitectureSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AYApiCallsArchitectureSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		865D87A71E4F82500057986C /* AYApiCallsArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYApiCallsArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865D87AA1E4F82500057986C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865D87AC1E4F82500057986C /* AYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AYHomeViewController.swift; path = ../../../AYHomeViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +43,14 @@
 		865D87CB1E4F888B0057986C /* AYParserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYParserFactory.swift; sourceTree = "<group>"; };
 		865D87CD1E4F8A1E0057986C /* AYServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYServiceProtocol.swift; sourceTree = "<group>"; };
 		865D87CF1E4F8C030057986C /* AYBaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBaseService.swift; sourceTree = "<group>"; };
+		865D87D11E50252C0057986C /* AYWeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYWeatherService.swift; sourceTree = "<group>"; };
+		865D87D71E5034330057986C /* AYLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYLoaderView.swift; sourceTree = "<group>"; };
+		865D87D91E50344E0057986C /* AYLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYLoaderView.xib; sourceTree = "<group>"; };
+		865D87DB1E50386D0057986C /* AYUrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYUrlBuilder.swift; sourceTree = "<group>"; };
+		866DC69D1E5372FC00C493BD /* AYCurrentWeatherParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYCurrentWeatherParser.swift; sourceTree = "<group>"; };
+		866DC69F1E5373A000C493BD /* AYForeCastWeatherParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYForeCastWeatherParser.swift; sourceTree = "<group>"; };
+		866DC6A11E537CDE00C493BD /* AYLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYLocation.swift; sourceTree = "<group>"; };
+		866DC6A31E537E6C00C493BD /* AYCurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYCurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +70,7 @@
 			children = (
 				865D87A91E4F82500057986C /* AYApiCallsArchitectureSample */,
 				865D87A81E4F82500057986C /* Products */,
+				8644C13F1E536EC9002DD319 /* AYApiCallsArchitectureSample-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +101,8 @@
 		865D87BC1E4F83910057986C /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				866DC6A11E537CDE00C493BD /* AYLocation.swift */,
+				866DC6A31E537E6C00C493BD /* AYCurrentWeather.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -101,6 +121,8 @@
 			children = (
 				865D87C91E4F88390057986C /* AYBaseParser.swift */,
 				865D87CB1E4F888B0057986C /* AYParserFactory.swift */,
+				866DC69D1E5372FC00C493BD /* AYCurrentWeatherParser.swift */,
+				866DC69F1E5373A000C493BD /* AYForeCastWeatherParser.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -109,7 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				865D87CD1E4F8A1E0057986C /* AYServiceProtocol.swift */,
+				865D87DB1E50386D0057986C /* AYUrlBuilder.swift */,
 				865D87CF1E4F8C030057986C /* AYBaseService.swift */,
+				865D87D11E50252C0057986C /* AYWeatherService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -117,6 +141,7 @@
 		865D87C01E4F83910057986C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				865D87D51E5033F40057986C /* Common */,
 				865D87C11E4F83910057986C /* Screens */,
 			);
 			path = UI;
@@ -155,6 +180,23 @@
 			path = BaseController;
 			sourceTree = "<group>";
 		};
+		865D87D51E5033F40057986C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				865D87D61E5034150057986C /* LoaderView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		865D87D61E5034150057986C /* LoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				865D87D71E5034330057986C /* AYLoaderView.swift */,
+				865D87D91E50344E0057986C /* AYLoaderView.xib */,
+			);
+			path = LoaderView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,6 +229,7 @@
 				TargetAttributes = {
 					865D87A61E4F824F0057986C = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -215,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865D87B51E4F82500057986C /* LaunchScreen.storyboard in Resources */,
+				865D87DA1E50344E0057986C /* AYLoaderView.xib in Resources */,
 				865D87B21E4F82500057986C /* Assets.xcassets in Resources */,
 				865D87B01E4F82500057986C /* Main.storyboard in Resources */,
 			);
@@ -230,9 +274,16 @@
 				865D87CC1E4F888B0057986C /* AYParserFactory.swift in Sources */,
 				865D87CE1E4F8A1E0057986C /* AYServiceProtocol.swift in Sources */,
 				865D87D01E4F8C030057986C /* AYBaseService.swift in Sources */,
+				865D87DC1E50386D0057986C /* AYUrlBuilder.swift in Sources */,
+				866DC69E1E5372FC00C493BD /* AYCurrentWeatherParser.swift in Sources */,
 				865D87AD1E4F82500057986C /* AYHomeViewController.swift in Sources */,
+				865D87D81E5034330057986C /* AYLoaderView.swift in Sources */,
+				865D87D21E50252C0057986C /* AYWeatherService.swift in Sources */,
+				866DC6A41E537E6C00C493BD /* AYCurrentWeather.swift in Sources */,
 				865D87AB1E4F82500057986C /* AppDelegate.swift in Sources */,
+				866DC6A21E537CDE00C493BD /* AYLocation.swift in Sources */,
 				865D87C81E4F84880057986C /* AYBaseViewController.swift in Sources */,
+				866DC6A01E5373A000C493BD /* AYForeCastWeatherParser.swift in Sources */,
 				865D87CA1E4F88390057986C /* AYBaseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AYApiCallsArchitectureSample/Frameworks",
@@ -362,6 +414,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AY.AYApiCallsArchitectureSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AYApiCallsArchitectureSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -370,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AYApiCallsArchitectureSample/Frameworks",
@@ -378,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AY.AYApiCallsArchitectureSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AYApiCallsArchitectureSample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -401,6 +457,7 @@
 				865D87BB1E4F82500057986C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

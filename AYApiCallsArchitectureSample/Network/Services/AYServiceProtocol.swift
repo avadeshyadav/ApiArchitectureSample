@@ -9,16 +9,9 @@
 import UIKit
 
 enum APIType : Int {
-    case homeAvailability
-    case googlePlaces
+    case currentWeather
+    case forecastWeather
     case none
-}
-
-enum HTTPMethodType {
-    case get
-    case post
-    case put
-    case delete
 }
 
 typealias ApiCompletionBlock = (AnyObject?) -> Void
@@ -26,6 +19,11 @@ typealias ApiCompletionBlock = (AnyObject?) -> Void
 
 protocol AYServiceProtocol: class {
     
-    func getRequestHeaders() -> Dictionary<String, String> 
-    func urlTaskWithURL(_ urlString: String, parameters: Dictionary<String, Any>?, methodType: HTTPMethodType) -> URLSessionDataTask
+    func getRequestHeaders() -> Dictionary<String, String>
+    
+    func getTaskWithURL(_ urlString: String, parameters: Dictionary<String, Any>?)-> URLSessionDataTask
+    func postTaskWithURL(_ urlString: String, parameters: Dictionary<String, Any>?) -> URLSessionDataTask
+    func putTaskWithURL(_ urlString: String, parameters: Dictionary<String, Any>?) -> URLSessionDataTask
+    func deleteTaskWithURL(_ urlString: String, parameters: Dictionary<String, Any>?) -> URLSessionDataTask
+    
 }

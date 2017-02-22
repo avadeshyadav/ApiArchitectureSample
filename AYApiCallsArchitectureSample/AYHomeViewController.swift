@@ -12,7 +12,17 @@ class AYHomeViewController: AYBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let service = AYWeatherService()
+        service.getCurrentWeatherFor(controller: self, city: "New Delhi", onError: { (error) in
+            
+        }) {[weak self] (result) in
+            self?.doSomeThing()
+        }
+    }
+    
+    func doSomeThing() {
+    
     }
 
 }
