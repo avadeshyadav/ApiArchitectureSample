@@ -8,11 +8,18 @@
 
 import UIKit
 
+
+class AYCurrentWeather: NSObject {
+    var weather: AYWeather?
+    var location: AYLocation?
+}
+
 class AYWeather: NSObject {
-  
+    
     var temperature: String?
     var condition: AYConditionItem?
     var lastUpdated: String?
+    var windSpeed: String?
 }
 
 class AYConditionItem: NSObject {
@@ -21,8 +28,10 @@ class AYConditionItem: NSObject {
     var text: String?
 }
 
-
-class AYCurrentWeather: NSObject {
-    var condition: AYWeather?
-    var location: AYLocation?
+class AYLocation: NSObject {
+    var name: String?
+    var country: String?
+    var latitude: String?
+    var longitude: String?
+    var localTime: String?
 }

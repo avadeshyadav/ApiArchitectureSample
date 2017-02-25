@@ -36,39 +36,34 @@ class AYBaseParser: NSObject {
         return locationObject
     }
     
-    func getConditionObject(from details: Dictionary<String, Any>) -> AYConditionItem {
+    func getConditionObject(from details: Dictionary<String, Any>?) -> AYConditionItem? {
     
+        guard let rawDetails = details else {
+            return nil
+        }
+        
         let conditionObject = AYConditionItem()
         
-        conditionObject.code = details["code"] as? Int
-        conditionObject.icon = details["icon"] as? String
-        conditionObject.text = details["text"] as? String
+        conditionObject.code = rawDetails["code"] as? Int
+        conditionObject.icon = rawDetails["icon"] as? String
+        conditionObject.text = rawDetails["text"] as? String
         
         return conditionObject
     }
+    
+    func getWeatherObject(from details: Dictionary<String, Any>?) -> AYWeather? {
+        
+        guard let rawDetails = details else {
+            return nil
+        }
+        let weather = AYWeather()
+        
+        weather.condition = getConditionObject(from: rawDetails["condition"] as? Dictionary<String, Any>)
+        weather.temperature = rawDetails["temp_c"] as? String
+        weather.lastUpdated = rawDetails["last_updated"] as? String
+        weather.windSpeed = rawDetails["wind_kph"] as? String
+        
+        return weather
+    }
 }
-/*
-cloud = 0;
-condition =         {
-    code = 1009;
-    icon = "//cdn.apixu.com/weather/64x64/night/122.png";
-    text = Overcast;
-};
-"feelslike_c" = 16;
-"feelslike_f" = "60.8";
-humidity = 68;
-"is_day" = 0;
-"last_updated" = "2017-02-14 23:25";
-"last_updated_epoch" = 1487114755;
-"precip_in" = 0;
-"precip_mm" = 0;
-"pressure_in" = "30.6";
-"pressure_mb" = 1021;
-"temp_c" = 16;
-"temp_f" = "60.8";
-"wind_degree" = 0;
-"wind_dir" = N;
-"wind_kph" = 0;
-"wind_mph" =
 
-  */     

@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		865D87AB1E4F82500057986C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87AA1E4F82500057986C /* AppDelegate.swift */; };
 		865D87AD1E4F82500057986C /* AYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87AC1E4F82500057986C /* AYHomeViewController.swift */; };
-		865D87B01E4F82500057986C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D87AE1E4F82500057986C /* Main.storyboard */; };
 		865D87B21E4F82500057986C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865D87B11E4F82500057986C /* Assets.xcassets */; };
-		865D87B51E4F82500057986C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865D87B31E4F82500057986C /* LaunchScreen.storyboard */; };
 		865D87C51E4F840A0057986C /* RySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865D87C41E4F840A0057986C /* RySDK.framework */; };
 		865D87C81E4F84880057986C /* AYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87C71E4F84880057986C /* AYBaseViewController.swift */; };
 		865D87CA1E4F88390057986C /* AYBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87C91E4F88390057986C /* AYBaseParser.swift */; };
@@ -24,18 +22,18 @@
 		865D87DC1E50386D0057986C /* AYUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D87DB1E50386D0057986C /* AYUrlBuilder.swift */; };
 		866DC69E1E5372FC00C493BD /* AYCurrentWeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC69D1E5372FC00C493BD /* AYCurrentWeatherParser.swift */; };
 		866DC6A01E5373A000C493BD /* AYForeCastWeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC69F1E5373A000C493BD /* AYForeCastWeatherParser.swift */; };
-		866DC6A21E537CDE00C493BD /* AYLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC6A11E537CDE00C493BD /* AYLocation.swift */; };
 		866DC6A41E537E6C00C493BD /* AYCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DC6A31E537E6C00C493BD /* AYCurrentWeather.swift */; };
+		86A61D0A1E615F7F00AD7061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A61D061E615F7F00AD7061 /* LaunchScreen.storyboard */; };
+		86A61D0B1E615F7F00AD7061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A61D081E615F7F00AD7061 /* Main.storyboard */; };
+		86A61D0D1E616A1D00AD7061 /* AYForecastWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A61D0C1E616A1D00AD7061 /* AYForecastWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8644C13F1E536EC9002DD319 /* AYApiCallsArchitectureSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AYApiCallsArchitectureSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8644C13F1E536EC9002DD319 /* AYApiCallsArchitectureSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AYApiCallsArchitectureSample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		865D87A71E4F82500057986C /* AYApiCallsArchitectureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYApiCallsArchitectureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865D87AA1E4F82500057986C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		865D87AC1E4F82500057986C /* AYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AYHomeViewController.swift; path = ../../../AYHomeViewController.swift; sourceTree = "<group>"; };
-		865D87AF1E4F82500057986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		865D87B11E4F82500057986C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		865D87B41E4F82500057986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865D87B61E4F82500057986C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		865D87C41E4F840A0057986C /* RySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RySDK.framework; sourceTree = "<group>"; };
 		865D87C71E4F84880057986C /* AYBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYBaseViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +47,10 @@
 		865D87DB1E50386D0057986C /* AYUrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYUrlBuilder.swift; sourceTree = "<group>"; };
 		866DC69D1E5372FC00C493BD /* AYCurrentWeatherParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYCurrentWeatherParser.swift; sourceTree = "<group>"; };
 		866DC69F1E5373A000C493BD /* AYForeCastWeatherParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYForeCastWeatherParser.swift; sourceTree = "<group>"; };
-		866DC6A11E537CDE00C493BD /* AYLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYLocation.swift; sourceTree = "<group>"; };
 		866DC6A31E537E6C00C493BD /* AYCurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYCurrentWeather.swift; sourceTree = "<group>"; };
+		86A61D071E615F7F00AD7061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86A61D091E615F7F00AD7061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86A61D0C1E616A1D00AD7061 /* AYForecastWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYForecastWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,6 @@
 			children = (
 				865D87A91E4F82500057986C /* AYApiCallsArchitectureSample */,
 				865D87A81E4F82500057986C /* Products */,
-				8644C13F1E536EC9002DD319 /* AYApiCallsArchitectureSample-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +89,8 @@
 				865D87BD1E4F83910057986C /* Network */,
 				865D87C01E4F83910057986C /* UI */,
 				865D87AA1E4F82500057986C /* AppDelegate.swift */,
-				865D87AE1E4F82500057986C /* Main.storyboard */,
+				8644C13F1E536EC9002DD319 /* AYApiCallsArchitectureSample-Bridging-Header.h */,
 				865D87B11E4F82500057986C /* Assets.xcassets */,
-				865D87B31E4F82500057986C /* LaunchScreen.storyboard */,
 				865D87B61E4F82500057986C /* Info.plist */,
 			);
 			path = AYApiCallsArchitectureSample;
@@ -101,8 +99,8 @@
 		865D87BC1E4F83910057986C /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				866DC6A11E537CDE00C493BD /* AYLocation.swift */,
 				866DC6A31E537E6C00C493BD /* AYCurrentWeather.swift */,
+				86A61D0C1E616A1D00AD7061 /* AYForecastWeather.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -141,6 +139,7 @@
 		865D87C01E4F83910057986C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				86A61D051E615F7F00AD7061 /* Storyboards */,
 				865D87D51E5033F40057986C /* Common */,
 				865D87C11E4F83910057986C /* Screens */,
 			);
@@ -195,6 +194,15 @@
 				865D87D91E50344E0057986C /* AYLoaderView.xib */,
 			);
 			path = LoaderView;
+			sourceTree = "<group>";
+		};
+		86A61D051E615F7F00AD7061 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86A61D061E615F7F00AD7061 /* LaunchScreen.storyboard */,
+				86A61D081E615F7F00AD7061 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,10 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865D87B51E4F82500057986C /* LaunchScreen.storyboard in Resources */,
+				86A61D0A1E615F7F00AD7061 /* LaunchScreen.storyboard in Resources */,
 				865D87DA1E50344E0057986C /* AYLoaderView.xib in Resources */,
 				865D87B21E4F82500057986C /* Assets.xcassets in Resources */,
-				865D87B01E4F82500057986C /* Main.storyboard in Resources */,
+				86A61D0B1E615F7F00AD7061 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +287,9 @@
 				865D87AD1E4F82500057986C /* AYHomeViewController.swift in Sources */,
 				865D87D81E5034330057986C /* AYLoaderView.swift in Sources */,
 				865D87D21E50252C0057986C /* AYWeatherService.swift in Sources */,
+				86A61D0D1E616A1D00AD7061 /* AYForecastWeather.swift in Sources */,
 				866DC6A41E537E6C00C493BD /* AYCurrentWeather.swift in Sources */,
 				865D87AB1E4F82500057986C /* AppDelegate.swift in Sources */,
-				866DC6A21E537CDE00C493BD /* AYLocation.swift in Sources */,
 				865D87C81E4F84880057986C /* AYBaseViewController.swift in Sources */,
 				866DC6A01E5373A000C493BD /* AYForeCastWeatherParser.swift in Sources */,
 				865D87CA1E4F88390057986C /* AYBaseParser.swift in Sources */,
@@ -291,20 +299,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		865D87AE1E4F82500057986C /* Main.storyboard */ = {
+		86A61D061E615F7F00AD7061 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				865D87AF1E4F82500057986C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		865D87B31E4F82500057986C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				865D87B41E4F82500057986C /* Base */,
+				86A61D071E615F7F00AD7061 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		86A61D081E615F7F00AD7061 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A61D091E615F7F00AD7061 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

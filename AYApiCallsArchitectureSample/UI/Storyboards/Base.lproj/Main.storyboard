@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="rlD-4D-3ew" kind="relationship" relationship="rootViewController" id="ACH-5x-k92"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rnF-ZT-Gey"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2a-Pl-n1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -42,6 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="750" y="898"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xkK-q9-4i9">
@@ -62,9 +63,6 @@
                                     <constraint firstAttribute="height" constant="30" id="dCe-Br-XzL"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="0Yo-jp-wJl"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

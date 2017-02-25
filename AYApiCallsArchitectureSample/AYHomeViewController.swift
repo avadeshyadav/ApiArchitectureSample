@@ -23,6 +23,11 @@ class AYHomeViewController: AYBaseViewController {
     
     func doSomeThing() {
     
+        let service = AYWeatherService()
+        service.getForecastWeatherFor(controller: self, city: "New Delhi", onError: { (error) in
+            
+        }) {[weak self] (result) in
+        }
     }
 
 }
